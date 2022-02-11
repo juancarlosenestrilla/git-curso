@@ -1,0 +1,160 @@
+https://www.youtube.com/watch?v=HiXLkL42tMU
+
+minuto 34
+
+
+--pwd           //Muestra el directorio actual
+--cd desktop    //va ala carpeta de escritorio
+--ls            //muestra el directorio actual
+--git init      //inicializa un proyecto nuevo
+--git status    //para ver el estado de nuestros archivos
+--git add       //para agregar un archivo al staging area.
+--git commit
+--git config --global user.email "enestrilla@gmail.com"
+--git config --global user.name "Charly"
+--:wq
+--git log                     //me da el informe del usuario clave del commit, email, fecha de creacion
+--git checkout --index.html   //Me descarta los cambios en index ya no funciona
+--git restore --index.html   //Me descarta los cambios en index
+--git diff index.html        //para ver las diferencias hechas en los archivos
+--git add index.html         //me guarda el cambio osea hace un commit
+--git commit .m -"He agregado un .gitignore"  //ya no entra ala consola de coomit escribe el commit desde la consola
+--git branch                  //me muestra master
+--git branch login            //crea una version alternativa llamada login
+--git branch                  //me muestra master y login
+--git checkout login          //para moverme dentro de login
+--git branch                  //me muestra en verde login indicando que estoy dentro de login
+--git add .                   //agrega todos los archivos
+
+--git clone http://github....
+
+
+
+
+/////**************************************************************/////////////////////////////////////
+User@WINDOWS-MJVMUAR MINGW64 ~/Desktop/git
+$ git init
+Initialized empty Git repository in C:/Users/User/Desktop/git/.git/
+
+User@WINDOWS-MJVMUAR MINGW64 ~/Desktop/git (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        app.js
+        index.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+User@WINDOWS-MJVMUAR MINGW64 ~/Desktop/git (master)
+$ git add app.js
+
+User@WINDOWS-MJVMUAR MINGW64 ~/Desktop/git (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   app.js
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        index.html
+
+
+User@WINDOWS-MJVMUAR MINGW64 ~/Desktop/git (master)
+$ git add index.html
+
+User@WINDOWS-MJVMUAR MINGW64 ~/Desktop/git (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   app.js
+        new file:   index.html
+
+
+User@WINDOWS-MJVMUAR MINGW64 ~/Desktop/git (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   app.js
+        new file:   index.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        style.css
+
+
+User@WINDOWS-MJVMUAR MINGW64 ~/Desktop/git (master)
+$ git add style.css
+
+User@WINDOWS-MJVMUAR MINGW64 ~/Desktop/git (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   app.js
+        new file:   index.html
+        new file:   style.css
+
+
+User@WINDOWS-MJVMUAR MINGW64 ~/Desktop/git (master)
+$ git commit
+Aborting commit due to empty commit message.
+
+User@WINDOWS-MJVMUAR MINGW64 ~/Desktop/git (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   app.js
+        new file:   index.html
+        new file:   style.css
+
+
+User@WINDOWS-MJVMUAR MINGW64 ~/Desktop/git (master)
+$ git commit
+[master (root-commit) a8ab2ef]   Mi primer commit
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 app.js
+ create mode 100644 index.html
+ create mode 100644 style.css
+
+User@WINDOWS-MJVMUAR MINGW64 ~/Desktop/git (master)
+$ git log
+commit a8ab2ef3f3cad964bb53fd22cb09f2c2acd3f73b (HEAD -> master)
+Author: enestrillarodriguez <enestrillarodriguez@gmail.com>
+Date:   Tue Feb 8 23:43:29 2022 -0600
+
+      Mi primer commit
+
+User@WINDOWS-MJVMUAR MINGW64 ~/Desktop/git (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+User@WINDOWS-MJVMUAR MINGW64 ~/Desktop/git (master)
+
+
+
+
+
